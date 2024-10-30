@@ -177,16 +177,10 @@ function PureEditor({
   };
 
   useEffect(() => {
+    const currentWidgetRoots = widgetRootsRef.current;
     return () => {
-      widgetRootsRef.current.forEach((root) => {
-        root.destroy();
-      });
-
-      widgetRootsRef.current.clear();
-
-      if (viewRef.current) {
-        viewRef.current.destroy();
-        viewRef.current = null;
+      if (currentWidgetRoots) {
+        currentWidgetRoots.forEach(root => root.remove());
       }
     };
   }, []);
