@@ -28,7 +28,8 @@
           "caseInsensitive": true
         }
       }
-    ]
+    ],
+    "react-hooks/exhaustive-deps": "warn"
   },
   "settings": {
     "import/resolver": {

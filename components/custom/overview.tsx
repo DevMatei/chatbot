@@ -16,8 +16,8 @@ export const Overview = () => {
           <MessageIcon size={32} />
         </p>
         <p>
-          Welcome to our intelligent chatbot! Ask me anything - from helping with tasks 
-          to answering questions, I'm here to assist you with natural, helpful responses.
+          Welcome to our intelligent chatbot! Ask me anything &mdash; from helping with tasks 
+          to answering questions, I&apos;m here to assist you with natural, helpful responses.
         </p>
         <p>
           Start a conversation by typing your message below or try one of the suggested prompts.
