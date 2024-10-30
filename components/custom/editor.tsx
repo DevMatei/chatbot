@@ -180,7 +180,7 @@ function PureEditor({
     const currentWidgetRoots = widgetRootsRef.current;
     return () => {
       if (currentWidgetRoots) {
-        currentWidgetRoots.forEach(root => root.remove());
+        currentWidgetRoots.clear();
       }
     };
   }, []);
