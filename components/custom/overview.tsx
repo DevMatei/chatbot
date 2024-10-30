@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion';
-import Link from 'next/link';
-
 import { MessageIcon } from './icons';
 
 export const Overview = () => {
@@ -18,21 +16,11 @@ export const Overview = () => {
           <MessageIcon size={32} />
         </p>
         <p>
-          This is an AI chatbot built with Next.js and the AI SDK. It uses
-          the <code className="rounded-md bg-muted px-1 py-0.5">streamText</code> function 
-          in the server and the <code className="rounded-md bg-muted px-1 py-0.5">useChat</code> hook
-          on the client to create a seamless chat experience.
+          Welcome to our intelligent chatbot! Ask me anything - from helping with tasks 
+          to answering questions, I'm here to assist you with natural, helpful responses.
         </p>
         <p>
-          You can learn more about the AI SDK by visiting the{' '}
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://sdk.vercel.ai/docs"
-            target="_blank"
-          >
-            docs
-          </Link>
-          .
+          Start a conversation by typing your message below or try one of the suggested prompts.
         </p>
       </div>
     </motion.div>
